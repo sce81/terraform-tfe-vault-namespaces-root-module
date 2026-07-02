@@ -11,8 +11,8 @@ terraform {
   }
   required_providers {
     vault = {
-      version = "~> 5.3.0"
       source  = "hashicorp/vault"
+      version = ">= 5.10.1"
     }
   }
 }
@@ -20,4 +20,3 @@ provider "vault" {
   address   = var.vault_url
   namespace = var.vault_namespace
 }
-

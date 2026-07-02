@@ -14,7 +14,7 @@ variable "namespace" {
   description = "Name of Namespace to deploy"
 }
 variable "child_namespaces" {
-  type        = string
-  default     = null
+  type        = set(string)
+  default     = []
   description = "Name of Namespace to deploy"
 }
